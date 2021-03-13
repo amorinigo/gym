@@ -1,0 +1,17 @@
+.button-ctn {
+    @include display-flex( center, flex-end, row );
+    width: 100%;
+    position: fixed;
+    top: 100%;
+    z-index: 150;
+}
+
+.upload-button {
+    @include button( 50px, 50px, 50%, var( --main-color ), #fff );
+    @include display-flex();
+    text-decoration: none;
+    position: relative;
+    top: -80px;
+    margin-right: 20px;
+    &:hover { background-color: #555555; }
+}

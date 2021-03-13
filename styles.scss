@@ -1,0 +1,31 @@
+@import './scss/global-mixins';
+@import './scss/global-classes';
+
+:root {
+    --main-color: #D7272A;
+    --main-color-hover: #AA1D20;
+    --navbar-bg: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: 'Oswald', sans-serif;
+    overflow-x: hidden;
+    user-select: none;
+    position: relative;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+@import './scss/main/navbar';
+@import './scss/main/banner';
+@import './scss/main/content';
+@import './scss/main/upload-button';
+@import './scss/main/modal';
+@import './scss/main/footer';

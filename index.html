@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM Fitness Studio</title>
+
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+</head>
+<body>
+
+
+    <!-- header -->
+    <header class="header">
+    
+
+        <nav id="navbar" class="navbar">
+
+
+            <div class="logo logo-navbar">
+                <img src="./assets/images/logo/logo.png" alt="logo" class="logo-img">
+    
+                <div class="logo-text">
+                    <h4 class="logo-h4">Gym</h4>
+                    <h5 class="logo-h5">Fitness studio</h5>
+                </div>
+            </div>
+
+
+            <ul id="menu" class="menu">
+                <li class="menu__item">
+                    <a href="#aboutUs" class="menu__link">About us</a>
+                </li>
+
+                <li class="menu__item">
+                    <a href="#whatWeOffer" class="menu__link">What we offer</a>
+                </li>
+
+                <li class="menu__item">
+                    <a href="#contactUs" class="menu__link">Contact us</a>
+                </li>
+
+                <li id="menuItem" class="menu__item">
+                    <span class="span-all-blocks">
+                        All blocks
+                        <i class="fas fa-chevron-down"></i>
+                    </span>
+
+                    <ul id="subMenu" class="sub-menu">
+
+                        <li class="sub-menu__item">
+                            <a href="#aboutUs" class="sub-menu__link">About us</a>
+                        </li>
+
+                        <li class="sub-menu__item">
+                            <a href="#whatWeOffer" class="sub-menu__link">What we offer</a>
+                        </li>
+
+                        <li class="sub-menu__item">
+                            <a href="#benefits" class="sub-menu__link">Benefits</a>
+                        </li>
+
+                        <li class="sub-menu__item">
+                            <a href="#registerNow" class="sub-menu__link">Register now</a>
+                        </li>
+
+                        <li class="sub-menu__item">
+                            <a href="#classes" class="sub-menu__link">Classes</a>
+                        </li>
+
+                        <li class="sub-menu__item">
+                            <a href="#testimonials" class="sub-menu__link">Testimonials</a>
+                        </li>
+
+                        <li class="sub-menu__item">
+                            <a href="#team" class="sub-menu__link">Team</a>
+                        </li>
+
+                        <li class="sub-menu__item">
+                            <a href="#gallery" class="sub-menu__link">Gallery</a>
+                        </li>
+
+                        <li class="sub-menu__item">
+                            <a href="#pricing" class="sub-menu__link">Pricing</a>
+                        </li>
+
+                        <li class="sub-menu__item">
+                            <a href="#contactUs" class="sub-menu__link">Contact us</a>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul>
+
+            <i id="menuButton" class="fas fa-bars menu-button__icon"></i>
+        </nav>
+        
+        <div id="shadow" class="shadow"></div>
+
+        <section class="banner">
+
+            <div class="banner-section-1">
+                <img src="./assets/images/banner/sm.jpeg" alt="banner" class="banner-img ">
+                <img src="./assets/images/banner/lg.jpeg" alt="banner" class="banner-img ">
+
+                <div class="banner-content">
+                    <h2 class="banner-title">
+                        THE BODY ACHIEVES WHAT THE MIND BELIEVES
+                    </h2>
+        
+                    <button id="bannerButton" class="banner-button">Try a free class</button>
+                </div>
+            </div>
+
+
+            <div class="banner-section-2">
+                <div class="part-1">
+                    <img src="./assets/images/sub-banner/1.jpeg" class="sub-banner-img">
+
+                    <div class="sub-banner-content">
+
+                        <h3 class="sub-banner-title">
+                            Men class
+                        </h3>
+
+                        <p class="sub-banner-p">
+                            We have a philosophy when it comes to fitness. There are no shortcuts on the road to success. We believe in teaching people the importance of longevity. There is no such thing as an overnight success.
+                        </p>
+
+                        <a href="#classes" class="sub-banner-button">View more</a>
+                    </div>
+                </div>
+
+                <div class="part-2">
+                    <img src="./assets/images/sub-banner/2.jpeg" class="sub-banner-img">
+
+                    <div class="sub-banner-content">
+
+                        <h3 class="sub-banner-title">
+                            Women class
+                        </h3>
+
+                        <p class="sub-banner-p">
+                            The Women’s Program is a female coached, all-female, strength and conditioning program that focuses on building strength, proper body mechanics, and heavy doses of conditioning work.
+                        </p>
+
+                        <a href="#classes" class="sub-banner-button">View more</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+    </header>
+
+
+    <!-- content -->
+    <main class="content">
+
+
+
+        <section id="aboutUs" class="about-us">
+            
+            <h2 class="about-us__title">
+                About us
+            </h2>
+
+            <h4 class="about-us__subtitle">
+                A PLACE FOR YOUR FITNESS GOAL
+            </h4>
+
+            <p class="about-us__paragraph">
+                Your personal trainer will wake up the monster inside you and turn you into the muscles machine. The program includes also mental practices aimed at improving your health dramatically. Aside from the gym, you can take advantage of pool, spa, sauna and other services in our center. We tend to provide the best services on the market to guarantee 100% positive effect for our customers.
+            </p>
+
+            <img src="./assets/images/about us/1.jpg" alt="image" class="about-us__img">
+                
+        </section>
+
+
+
+        <section id="whatWeOffer" class="what-we-offer">
+
+            <div class="section">
+                <img src="./assets/images/what-we-offer/1.jpeg" class="section__img">
+
+                <div class="section__content">
+
+                    <h3 class="section__title">
+                        PERSONAL TRAINING
+                    </h3>
+
+                    <p class="section__p">
+                        If you don’t like to work out with other clients of our center, you are welcome to hire a personal coach.
+                    </p>
+
+                    <button class="section__button offer-button">Book now</button>
+
+                </div>
+            </div>
+
+
+            <div class="section">
+                <img src="./assets/images/what-we-offer/2.jpg" class="section__img">
+
+                <div class="section__content">
+
+                    <h3 class="section__title">
+                        BASIC CROSSFIT
+                    </h3>
+
+                    <p class="section__p">
+                        Our staff includes amazing professionals that have an eye for crossfit.
+                    </p>
+
+                    <button class="section__button offer-button">Book now</button>
+
+                </div>
+            </div>
+
+
+            <div class="section">
+                <img src="./assets/images/what-we-offer/3.jpeg" class="section__img">
+
+                <div class="section__content">
+
+                    <h3 class="section__title">
+                        OLYMPIC POWERLIFTING
+                    </h3>
+
+                    <p class="section__p">
+                        Do you want to become a professional powerlifter? Go ahead and try yourslelf just right now.
+                    </p>
+
+                    <button class="section__button offer-button">Book now</button>
+
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <section id="benefits" class="benefits">
+
+            <div class="benefits__section">
+                <img src="./assets/images/benefits/1.png" alt="image" class="benefits__img">
+
+                <h4 class="benefits__title">
+                    FUNCTIONAL TRAINING
+                </h4>
+
+                <p class="benefits__p">
+                    Squeeze 100% benefit from the universal training: speed, strength, endurance
+                </p>
+            </div>
+
+
+            <div class="benefits__section">
+                <img src="./assets/images/benefits/2.png" alt="image" class="benefits__img">
+
+                <h4 class="benefits__title">
+                    CARDIO TRAINING
+                </h4>
+
+                <p class="benefits__p">
+                    Improve your health, endurance and cardiovascular system
+                </p>
+            </div>
+
+
+            <div class="benefits__section">
+                <img src="./assets/images/benefits/3.png" alt="image" class="benefits__img">
+
+                <h4 class="benefits__title">
+                    PERSONAL TRAINER
+                </h4>
+
+                <p class="benefits__p">
+                    Next to you will always be a personal trainer, who will teach, prompt and insure.
+                </p>
+            </div>
+
+
+            <div class="benefits__section">
+                <img src="./assets/images/benefits/4.png" alt="image" class="benefits__img">
+
+                <h4 class="benefits__title">
+                    BECOME STRONGER
+                </h4>
+
+                <p class="benefits__p">
+                    Strength training will make you a monster of the iron world with incredible power
+                </p>
+            </div>
+
+
+            <div class="benefits__section">
+                <img src="./assets/images/benefits/5.png" alt="image" class="benefits__img">
+
+                <h4 class="benefits__title">
+                    AESTHETICS OF THE BODY
+                </h4>
+
+                <p class="benefits__p">
+                    Our training will make your body not only hardy, but also beautiful.
+                </p>
+            </div>
+
+
+            <div class="benefits__section">
+                <img src="./assets/images/benefits/6.png" alt="image" class="benefits__img">
+
+                <h4 class="benefits__title">
+                    SPORTS NUTRITION
+                </h4>
+
+                <p class="benefits__p">
+                    You will learn about all the principles of healthy sports nutrition.
+                </p>
+            </div>
+
+        </section>
+
+
+
+        <section id="registerNow" class="register-now">
+
+            <div class="register-now__content">
+                <h2 class="register-now__title">
+                    JOIN OUR
+                </h2>
+                
+                <h2 class="register-now__title">
+                    NEXT COMPETITION
+                </h2>
+
+                <div class="register-now__clock">
+                    <div class="clock-section">
+                        <span class="clock-time">
+                            <span class="clock-number">0</span>
+                            <span class="clock-text">Days</span>
+                        </span>
+                    </div>
+
+                    <span class="clock-points">:</span>
+
+                    <div class="clock-section">
+                        <span class="clock-time">
+                            <span class="clock-number"></span>
+                            <span class="clock-text">Hours</span>
+                        </span>
+                    </div>
+
+                    <span class="clock-points">:</span>
+
+                    <div class="clock-section">
+                        <span class="clock-time">
+                            <span class="clock-number"></span>
+                            <span class="clock-text">Minutes</span>
+                        </span>
+                    </div>
+
+                    <span class="clock-points">:</span>
+
+                    <div class="clock-section">
+                        <span class="clock-time">
+                            <span class="clock-number"></span>
+                            <span class="clock-text">Seconds</span>
+                        </span>
+                    </div>
+                </div>
+
+                <a href="#contactUs" class="register-now__button">REGISTER NOW</a>
+            </div>
+
+        </section>
+
+
+
+        <section id="classes" class="classes">
+
+            <div class="classes-ctn">
+
+                <h3 class="classes__title">
+                    OUR CLASSES
+                </h3>
+
+
+                <p class="classes__p">
+                    Classes are drop-in and included with your membership. Wristbands are required for entry into all group fitness classes and are available beginning thirty minutes prior to the scheduled start time for each class.
+                </p>
+
+
+                <div class="classes__buttons-ctn">
+
+                    <button id="btn1" class="classes__button-1 red">Fitness for man</button>
+                    <button id="btn2" class="classes__button-2">Fitness for girl</button>
+
+                </div>
+
+
+                <div class="classes-img-grid">
+                    
+                    <div class="classes-img-ctn">
+                        <img src="./assets/images/classes/man/1.jpg" class="man-img">
+                        <img src="./assets/images/classes/girl/1.jpg" class="girl-img">
+
+                        <div class="classes-img-text">
+                            <p class="classes-img-p">
+                                PSYCHOLOGY OF TRAINING
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="classes-img-ctn">
+                        <img src="./assets/images/classes/man/2.jpg" class="man-img">
+                        <img src="./assets/images/classes/girl/2.jpg" class="girl-img">
+
+                        <div class="classes-img-text">
+                            <p class="classes-img-p">
+                                PRACTICAL SELF DEFENCE
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="classes-img-ctn">
+                        <img src="./assets/images/classes/man/3.jpg" class="man-img">
+                        <img src="./assets/images/classes/girl/3.jpg" class="girl-img">
+
+                        <div class="classes-img-text">
+                            <p class="classes-img-p">
+                                FITNESS FOR MAN
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="classes-img-ctn">
+                        <img src="./assets/images/classes/man/4.jpg" class="man-img">
+                        <img src="./assets/images/classes/girl/4.jpg" class="girl-img">
+
+                        <div class="classes-img-text">
+                            <p class="classes-img-p">
+                                STRENGTH TRAINING
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="classes-img-ctn">
+                        <img src="./assets/images/classes/man/5.jpg" class="man-img">
+                        <img src="./assets/images/classes/girl/5.jpg" class="girl-img">
+
+                        <div class="classes-img-text">
+                            <p class="classes-img-p">
+                                BOXING FOR MAN
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="classes-img-ctn">
+                        <img src="./assets/images/classes/man/6.jpg" class="man-img">
+                        <img src="./assets/images/classes/girl/6.jpg" class="girl-img">
+
+                        <div class="classes-img-text">
+                            <p class="classes-img-p">
+                                CARDIO FOR MAN
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </section>
+
+
+
+        <section id="testimonials" class="testimonials">
+
+            <div class="testimonials__ctn">
+
+                <div class="testimonials__section">
+
+                    <div class="testimonials__top">
+
+                        <div class="top-left">
+                            <h3 class="top-title">MIKE STRAMOND</h3>
+                            <h4 class="top-subtitle">HAPPY CLIENT</h4>
+                        </div>
+
+                        <div class="top-right">
+                            
+                            <a href="https://twitter.com/" target="_blank" class="testimonial__link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            
+                            <a  href="https://es-la.facebook.com/" target="_blank"
+                                class="testimonial__link"
+                            >
+                                <i class="fab fa-facebook-f"></i> 
+                            </a>
+                            
+                            <a  href="https://ar.pinterest.com/" target="_blank"
+                                class="testimonial__link"
+                            >
+                                <i class="fab fa-pinterest-p"></i> 
+                            </a>
+
+                            <a  href="https://www.instagram.com/" target="_blank"
+                                class="testimonial__link"
+                            >
+                                <i class="fab fa-instagram"></i> 
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="testimonials__middle">
+                        <p class="testimonials__p">
+                            Edward helped me to bounce back and get to the top of my physical shape again! I'm so grateful for all the help he provided!
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="testimonials__section">
+
+                    <div class="testimonials__top">
+
+                        <div class="top-left">
+                            <h3 class="top-title">JOHN NELSON</h3>
+                            <h4 class="top-subtitle">HAPPY CLIENT</h4>
+                        </div>
+
+                        <div class="top-right">
+                            <a href="https://twitter.com/" target="_blank" class="testimonial__link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            
+                            <a  href="https://es-la.facebook.com/" target="_blank"
+                                class="testimonial__link"
+                            >
+                                <i class="fab fa-facebook-f"></i> 
+                            </a>
+                            
+                            <a  href="https://ar.pinterest.com/" target="_blank"
+                                class="testimonial__link"
+                            >
+                                <i class="fab fa-pinterest-p"></i> 
+                            </a>
+
+                            <a  href="https://www.instagram.com/" target="_blank"
+                                class="testimonial__link"
+                            >
+                                <i class="fab fa-instagram"></i> 
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="testimonials__middle">
+                        <p class="testimonials__p">
+                            I was quite surprised with a range of services Edward offered me. His group training programs are perfect for beginners.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section id="team" class="team">
+
+            <h2 class="team-title">OUR BEST TRAINERS</h2>
+
+            <p class="team-p">
+                One-to-one sessions with an experienced, dedicated coach at times that suit your schedule. The personal attention received in these sessions results in rapid progress.
+            </p>
+
+            <div class="teams-ctn">
+
+                <div class="person">
+
+                    <div class="person-img-ctn img-ctn-1">
+                        <h6 class="person-name">JONH MIKE</h6>
+                    </div>
+
+                    <p class="person-description">
+                        12 Years ago I lost 8olds with the help of a personal coach and it completely changed my way of comletely changed my mission to sway people
+                    </p>
+
+                    <div class="person-networks-ctn">
+                        <a href="https://twitter.com/" target="_blank" class="network__link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        
+                        <a  href="https://es-la.facebook.com/" target="_blank" class="network__link">
+                            <i class="fab fa-facebook-f"></i> 
+                        </a>
+                        
+                        <a  href="https://ar.pinterest.com/" target="_blank" class="network__link">
+                            <i class="fab fa-pinterest-p"></i> 
+                        </a>
+
+                        <a  href="https://www.instagram.com/" target="_blank" class="network__link">
+                            <i class="fab fa-instagram"></i> 
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="person">
+
+                    <div class="person-img-ctn img-ctn-2">
+                        <h6 class="person-name">KENNETH RICHARDSON</h6>
+                    </div>
+
+                    <p class="person-description">
+                        I initially took on CrossFit trainings after a spending a lifetime in proffessional athletics. The fact that I loved sports so much contributed...
+                    </p>
+
+                    <div class="person-networks-ctn">
+                        <a href="https://twitter.com/" target="_blank" class="network__link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        
+                        <a  href="https://es-la.facebook.com/" target="_blank" class="network__link">
+                            <i class="fab fa-facebook-f"></i> 
+                        </a>
+                        
+                        <a  href="https://ar.pinterest.com/" target="_blank" class="network__link">
+                            <i class="fab fa-pinterest-p"></i> 
+                        </a>
+
+                        <a  href="https://www.instagram.com/" target="_blank" class="network__link">
+                            <i class="fab fa-instagram"></i> 
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="person">
+
+                    <div class="person-img-ctn img-ctn-3">
+                        <h6 class="person-name">VIRGIL COOK</h6>
+                    </div>
+
+                    <p class="person-description">
+                        Virgil has been training amateur and professional combat athletes since 1995. His skill-set expands to the following combat styles: MMA fighting.
+                    </p>
+
+                    <div class="person-networks-ctn">
+                        <a href="https://twitter.com/" target="_blank" class="network__link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        
+                        <a  href="https://es-la.facebook.com/" target="_blank" class="network__link">
+                            <i class="fab fa-facebook-f"></i> 
+                        </a>
+                        
+                        <a  href="https://ar.pinterest.com/" target="_blank" class="network__link">
+                            <i class="fab fa-pinterest-p"></i> 
+                        </a>
+
+                        <a  href="https://www.instagram.com/" target="_blank" class="network__link">
+                            <i class="fab fa-instagram"></i> 
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section id="gallery" class="gallery">
+
+            <div class="gallery-img-ctn">
+                <img src="./assets/images/gallery/1.jpg" alt="image" class="gallery-img">
+            </div>
+
+
+            <div class="gallery-img-ctn">
+                <img src="./assets/images/gallery/2.jpg" alt="image" class="gallery-img">
+            </div>
+
+
+            <div class="gallery-img-ctn">
+                <img src="./assets/images/gallery/3.jpg" alt="image" class="gallery-img">
+            </div>
+
+
+            <div class="gallery-img-ctn">
+                <img src="./assets/images/gallery/4.jpg" alt="image" class="gallery-img">
+            </div>
+
+
+            <div class="gallery-img-ctn">
+                <img src="./assets/images/gallery/5.jpg" alt="image" class="gallery-img">
+            </div>
+
+
+            <div class="gallery-img-ctn">
+                <img src="./assets/images/gallery/6.jpg" alt="image" class="gallery-img">
+            </div>
+
+        </section>
+
+
+
+        <section id="pricing" class="pricing">
+
+            <div class="pricing-content-ctn">
+
+                <h3 class="pricing-title">OUR PRICING TABLE</h3>
+
+                <p class="princing-p">
+                    Be active, healthy and happy with our unique programs for body & soul. Remember, the only bad workout is the one you didn’t do!
+                </p>
+
+                <div class="pricing-sections-flex">
+
+                    <div class="pricing-section pricing-section-1">
+
+                        <div class="pricing-section-ctn">
+                            <h4 class="pricing-section__title">FITNESS FOR GIRL</h4>
+    
+                            <h5 class="pricing-section__subtitle">MONTHLY FEE</h5>
+    
+                            <p class="pricing-section-p1">
+                                Whether you visit us for fitness or functions, training or treatments, eating out or entertainment, we put your health and well-being at the heart of everything we do. Be the girl at the gym that motivates everyone else to push a little harder.
+                            </p>
+    
+                            <p class="pricing-section-p2">
+                                We offer various training programs at a competitive price:
+                            </p>
+    
+                            <div class="pricing-checkboxs-ctn">
+    
+                                <div class="pricing-checkbox-div">
+                                    <i class="far fa-check-square"></i>
+                                    <p class="pricing-checkbox-p">
+                                        Improve the flexibility of your joints and muscles with our stretch classes.
+                                    </p>
+                                </div>
+    
+                                <div class="pricing-checkbox-div">
+                                    <i class="far fa-check-square"></i>
+                                    <p class="pricing-checkbox-p">
+                                        Enjoy 30-minute athletic and functional core strength workout to empower yourself.
+                                    </p>
+                                </div>
+    
+                                <div class="pricing-checkbox-div">
+                                    <i class="far fa-check-square"></i>
+                                    <p class="pricing-checkbox-p">
+                                        We have a time tested approach for tailoring each specific program for every trainee.
+                                    </p>
+                                </div>
+    
+                            </div>
+                        </div>
+    
+                        <button class="pricing-button">BUY NOW</button>
+    
+                    </div>
+    
+                    <div class="pricing-section pricing-section-2">
+    
+                        <div class="pricing-section-ctn">
+                            <h4 class="pricing-section__title">FITNESS FOR MAN</h4>
+    
+                            <h5 class="pricing-section__subtitle">MONTHLY FEE</h5>
+    
+                            <p class="pricing-section-p1">
+                                We get you fit for anything. We cater for all levels of fitness, from retiree with no training experience to the elite professional athlete, and everything in between. Not all gyms are the same. Come in and try it for yourself.
+                            </p>
+    
+                            <p class="pricing-section-p2">
+                                Here we offer a training experience like no other:
+                            </p>
+    
+                            <div class="pricing-checkboxs-ctn">
+    
+                                <div class="pricing-checkbox-div">
+                                    <i class="far fa-check-square"></i>
+                                    <p class="pricing-checkbox-p">
+                                        Physical training completed in a friendly environment with like-minded people.
+                                    </p>
+                                </div>
+    
+                                <div class="pricing-checkbox-div">
+                                    <i class="far fa-check-square"></i>
+                                    <p class="pricing-checkbox-p">
+                                        Program that emphasizes the importance of mechanics, consistency, and intensity.
+                                    </p>
+                                </div>
+    
+                                <div class="pricing-checkbox-div">
+                                    <i class="far fa-check-square"></i>
+                                    <p class="pricing-checkbox-p">
+                                        One-on-one sessions will allow you to integrate easily into regular classes.
+                                    </p>
+                                </div>
+    
+                            </div>
+                        </div>
+    
+                        <button class="pricing-button">BUY NOW</button>
+    
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="pricing-box">
+
+                <div class="pricing-text">
+                    <h3 class="pricing-box__title">
+                        GOT A QUASTION? WE WOULD BE HAPPY TO HELP!
+                    </h3>
+    
+                    <p class="pricing-box__p">
+                        We can call you quickly, just enter  your number below
+                    </p>
+                </div>
+
+                <button id="pricingBoxBtn" class="pricing-box-btn">CONTACT US</button>
+
+            </div>
+
+        </section>
+
+
+
+        <section id="contactUs" class="contact-us">
+            
+            <div class="contact-form-ctn">
+
+                <h4 class="contact-form__title">
+                    GET IN TOUCH
+                </h4>
+
+                <p class="contact-form__p">
+                    Whatever types of questions you'll have. Feel free to get in touch with us
+                </p>
+
+                <form id="contactForm" class="contact-form" autocomplete="off" novalidate>
+                    <input id="name2" type="text" class="contact-form__input" 
+                        placeholder="Your name *"
+                    >
+                    <p class="contact-form__error">Invalid name</p>
+
+                    <input id="email" type="text" class="contact-form__input" placeholder="Email *">
+                    <p class="contact-form__error">Invalid email</p>
+
+                    <textarea id="message" class="contact-form__textarea" placeholder="Message *" ></textarea>
+                    <p class="contact-form__error">Invalid message</p>
+
+                    <span id="success" class="contact-form__success">
+                        Your message was sent successfully
+                    </span>
+
+                    <input type="submit" value="SEND MESSAGE" class="contact-form__submit">
+                </form>
+
+            </div>
+
+
+            <div class="contact-us__location-ctn">
+
+                <div class="contact-us__map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96716.04095832117!2d-74.00678342166803!3d40.753748020472976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd397926caabf0377!2sBlink%20Fitness!5e0!3m2!1ses!2sar!4v1615526027724!5m2!1ses!2sar" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                    >
+                    </iframe>
+                </div>
+                
+                <div class="contact-us__info-ctn">
+
+                    <div class="contact-us-info">
+                        <i class="fas fa-phone-alt contact-us-icon"></i>
+
+                        <div class="contact-us-content">
+                            <p class="contact-us-text"> Call us now </p>
+                            <p class="contact-us-text2"> (364) 106-7572 </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-us-info">
+                        <i class="fas fa-map-marker-alt contact-us-icon"></i>
+
+                        <div class="contact-us-content">
+                            <p class="contact-us-text">Address</p>
+                            <p class="contact-us-text2">240 E 54th St, New York.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+
+    <!-- upload-button -->
+    <div id="buttonCtn" class="button-ctn">
+        <a href="#navbar" class="upload-button">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </div>
+
+
+    <!-- modal -->
+    <section id="modalShadow" class="modal">
+        <div id="modal" class="modal__content">
+            <i id="modalIcon" class="fas fa-times modal__icon"></i>
+
+            <h2 class="modal__title">
+                REQUEST A CALLBACK
+            </h2>
+
+            <h5 class="modal__subtitle">
+                We can call you quickly, just enter  your number below
+            </h5>
+
+            <form id="modalForm" class="modal__form" autocomplete="off" novalidate>
+                <label for="" class="modal__label">
+                    <input type="text" id="name" class="modal__input" placeholder="Name *">
+                    <p class="modal__error">Invalid name.</p>
+                </label>
+
+                <label for="" class="modal__label">
+                    <input type="number" id="phone" class="modal__input" placeholder="Phone *">
+                    <p class="modal__error">Invalid phone.</p>
+                </label>
+                
+                <input id="modalSubmit" type="submit" value="REQUEST" class="modal__submit">
+            </form>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="footer">
+
+        <p class="footer__copyright">
+            © 2021 All Rights Reserved Terms of Use and Privacy Policy
+        </p>
+        
+        <div class="logo">
+            <img src="./assets/images/logo/logo-footer.png" alt="logo" class="logo-img">
+
+            <div class="logo-text">
+                <h4 class="logo-h4">Gym</h4>
+                <h5 class="logo-h5">Fitness studio</h5>
+            </div>
+        </div>
+
+        <div class="footer__icons">
+            <div class="footer__icon-ctn">
+                <a href="https://twitter.com/" target="_blank" class="footer__link">
+                    <i class="footer__icon fab fa-twitter"></i>
+                </a>
+            </div>
+
+            <div class="footer__icon-ctn">
+                <a href="https://es-la.facebook.com/" target="_blank" class="footer__link">
+                    <i class="footer__icon fab fa-facebook-f"></i> 
+                </a>                   
+            </div>
+
+            <div class="footer__icon-ctn">
+                <a href="https://ar.pinterest.com/" target="_blank" class="footer__link">
+                    <i class="footer__icon fab fa-pinterest-p"></i> 
+                </a>                   
+            </div>
+
+            <div class="footer__icon-ctn">
+                <a href="https://www.instagram.com/" target="_blank" class="footer__link">
+                    <i class="footer__icon fab fa-instagram"></i> 
+                </a>                   
+            </div>
+        </div>
+
+    </footer>
+    
+
+    <script src="./main.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+.logo {
+    @include display-flex( center, space-between, row );
+
+    .logo-text {
+        margin-left: 25px;
+        text-transform: uppercase;
+
+        .logo-h4 {
+            color: #fff;
+            font-weight: 900;
+            font-size: 25px;
+        }
+
+        .logo-h5 {
+            color: var( --main-color );
+            font-size: 18px;
+            font-weight: lighter;
+        }
+    }
+}

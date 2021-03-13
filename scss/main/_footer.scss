@@ -1,0 +1,39 @@
+.footer {
+    @include display-flex( center, space-evenly, column);
+    background: #000;
+    height: 300px;
+}
+
+.footer__copyright {
+    color: grey;
+    text-align: center;
+    padding: 0 5px;
+}
+
+.footer__icons { display: flex; }
+
+.footer__link {
+    text-decoration: none;
+    @include button( 50px, 50px, 50%, #fff, var( --main-color ) );
+    @include display-flex();
+    color: var( --main-color );
+    margin-right: 10px;
+
+    &:hover {
+        background-color: var( --main-color );
+        color: #fff;
+    }
+}
+
+@media( min-width: 950px ) {
+    .footer {
+        height: 220px;
+        flex-direction: row;
+        transform: translateY(31px);
+    }
+
+    .footer__link {
+        @include width-and-height( 60px, 60px );
+        margin-right: 10px;
+    }
+}

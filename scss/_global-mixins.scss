@@ -1,0 +1,89 @@
+@mixin display-flex($align-items: center, $justify-content: center, $flex-direction: row) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  flex-direction: $flex-direction;
+}
+
+@mixin position-abs-top-left($top: 0, $left: 0) {
+  position: absolute;
+  top: $top;
+  left: $left;
+}
+
+@mixin position-abs-top-right($top: 0, $right: 0) {
+  position: absolute;
+  top: $top;
+  right: $right;
+}
+
+@mixin position-abs-bottom-left($bottom: 0, $left: 0) {
+  position: absolute;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin position-abs-bottom-right($bottom: 0, $right: 0) {
+  position: absolute;
+  bottom: $bottom;
+  right: $right;
+}
+
+@mixin width-and-height($width: 100%, $height: 100%) {
+  width: $width;
+  height: $height;
+}
+
+@mixin img-format() {
+  @include width-and-height();
+  object-fit: cover;
+}
+
+@mixin img-ctn-format($width: auto, $height: auto, $margin: 0) {
+  @include width-and-height($width, $height);
+  margin: $margin;
+  position: relative;
+  background: var(--img-bg-color);
+  overflow: hidden;
+  img { @include img-format($border-radius); }
+}
+
+@mixin button( $width: auto, $height: auto, $border-radius: 0, $background: none, $color ) {
+  @include width-and-height($width, $height);
+  border: none;
+  outline: none;
+  border-radius: $border-radius;
+  background-color: $background;
+  transition: background-color .3s, color .3s;
+  color: $color;
+  cursor: pointer;
+}
+
+@mixin bigButton( $bg-color: none, $padding: 20px 30px ) {
+  outline: none;
+  background-color: $bg-color;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #fff;
+  border: 3px solid var( --main-color );
+  padding: $padding;
+  transition: background-color .3s, border .3s;
+}
+
+@mixin bigButtonHover( $bg-color, $border-color ) {
+  background-color: $bg-color;
+  border: 3px solid $border-color;
+}
+
+@mixin shadow {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s, visibility .5s;
+  background: rgba( 0,0,0,.7 );
+  z-index: 3000;
+}
+
+@mixin shadow-active {
+  opacity: 1;
+  visibility: visible;
+}

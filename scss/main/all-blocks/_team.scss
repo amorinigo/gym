@@ -1,0 +1,104 @@
+.team { 
+    padding: 70px 10px; 
+    text-align: center;
+}
+
+.team-p {
+    color: grey;
+    margin: 20px 0;
+}
+
+.person { margin-bottom: 30px; }
+
+.person-img-ctn {
+    position: relative;
+    @include width-and-height( 100%, 380px );
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-ctn-1 { background-image: url( './assets/images/team/1.jpg' ); }
+.img-ctn-2 { background-image: url( './assets/images/team/2.jpg' ); }
+.img-ctn-3 { background-image: url( './assets/images/team/3.jpg' ); }
+
+.person-name {
+    @include position-abs-bottom-left();
+    width: 100%;
+    background-color: rgba(215, 39, 4, .7);
+    padding: 20px 0;
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.person-description {
+    margin: 15px 0;
+    color: grey;
+}
+
+.person-networks-ctn {
+    @include display-flex( center, space-between, row);
+    width: 120px;
+    margin: 0 auto;
+}
+
+.network__link {
+    text-decoration: none;
+
+    i {
+        color: var(--main-color);
+        font-size: 19px;
+        transition: color .3s;
+        &:hover { color: #000; }
+    }
+}
+
+@media( min-width: 320px ) {
+    .team-title { font-size: 30px; }
+    .team-p { font-size: 17px; }
+}
+
+@media( min-width: 600px ) {
+    .team-title { font-size: 40px; }
+}
+
+@media( min-width: 630px ) {
+    .img-ctn-1,
+    .img-ctn-2,
+    .img-ctn-3 {
+        background-position-y: -50px;
+    }
+}
+
+@media( min-width: 720px ) {
+    .img-ctn-1,
+    .img-ctn-2,
+    .img-ctn-3 {
+        background-position-y: -80px;
+    }
+}
+
+@media( min-width: 769px ) {
+    .person { margin: 0 20px 0 0; }
+    .teams-ctn { display: flex; }
+
+    .img-ctn-1,
+    .img-ctn-2,
+    .img-ctn-3 {
+        background-position-y: 0;
+    }
+}
+
+@media( min-width: 1040px ) {
+    .team-title { font-size: 50px; }
+
+    .team-p {
+        font-size: 20px;
+        padding: 0 70px;
+    }
+
+    .person-img-ctn { height: 602px; }
+    .person-description { font-size: 18px; }
+    .person-name { font-size: 23px; }
+}

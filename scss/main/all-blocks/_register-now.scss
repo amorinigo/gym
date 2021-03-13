@@ -1,0 +1,102 @@
+.register-now {
+    min-height: 642px;
+    background-image: url('./assets/images/register-now/sm.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    @include display-flex();
+}
+
+.register-now__content {
+    color: #fff;
+    @include width-and-height( 100%, 70% );
+    margin-left: 20px;
+}
+
+.register-now__title { font-size: 30px; }
+.register-now__title:nth-child( 2 ) { margin-bottom: 15px;}
+
+.register-now__clock {
+    color: #fff;
+    @include display-flex( flex-start, normal, column );
+}
+
+.clock-section {
+    border: 2px solid var( --main-color );
+    padding: 8px;
+    width: 70px;
+    margin-bottom: 10px;
+    flex-shrink: 0;
+}
+
+.clock-time { text-align: center; }
+
+.clock-number,
+.clock-text { display: block } 
+
+.clock-number { font-weight: 900; }
+
+.clock-points {
+    margin: 0 5px;
+    font-size: 25px;
+    transform: translateY( 10px );
+    display: none;
+}
+
+.register-now__button {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 13px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    @include bigButton( var( --main-color ), 10px );
+    &:hover { @include bigButtonHover( var(--main-color-hover), var(--main-color-hover) ); }
+}
+
+
+// MEDIA QUERIES.
+@media( min-width: 370px ) {
+    .register-now__clock { flex-direction: row; }
+    .clock-points { display: block; }
+    .clock-section { margin: 0; }
+}
+
+@media( min-width: 450px ) {
+    .register-now__title { font-size: 45px; }
+    .clock-section { width: 80px; }
+    .clock-number { font-size: 30px; }
+    .clock-text { font-size: 20px; }
+
+    .clock-points {
+        transform: translateY( 24px );
+        margin: 0 10px;
+    }
+    
+    .register-now__button {
+        font-size: 15px;
+        padding: 20px 30px;
+        margin-top: 30px;
+    }
+}
+
+@media( min-width: 460px ) {
+    .register-now { background-image: url('./assets/images/register-now/lg.jpg'); }
+}
+
+@media( min-width: 700px ) {
+    .clock-section {
+        width: 110px;
+        padding: 8px 12px;
+    }
+
+    .clock-number { font-size: 45px; }
+
+    .clock-points { 
+        transform: translateY( 20px ); 
+        font-size: 45px;
+        margin: 0 15px;
+    }
+}
+
+@media( min-width: 900px )  { .register-now__title { font-size: 65px; } }
+@media( min-width: 1040px ) { .register-now__title { font-size: 80px; } }
